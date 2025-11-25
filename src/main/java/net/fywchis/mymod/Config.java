@@ -1,4 +1,4 @@
-package net.fywchis.mymode;
+package net.fywchis.mymod;
 
 import java.util.List;
 
