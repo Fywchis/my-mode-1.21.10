@@ -1,5 +1,7 @@
 {
   "item.mymod.tnt10x": "TNT 10X",
 
-  "block.mymod.block_smth": "Block of Something"
+  "block.mymod.block_smth": "Block of Something",
+
+  "creativetab.mymod.mod_items_blocks": "Mymodtab"
 }
