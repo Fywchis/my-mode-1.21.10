@@ -1,5 +1,6 @@
 package net.fywchis.mymod;
 
+import net.fywchis.mymod.block.ModBlocks;
 import net.fywchis.mymod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class MyMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,6 +54,9 @@ public class MyMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS){
             event.accept(ModItems.TNT_10X);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BLOCK_SMTH);
         }
     }
 

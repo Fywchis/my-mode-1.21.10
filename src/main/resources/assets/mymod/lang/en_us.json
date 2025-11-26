@@ -1,3 +1,5 @@
 {
-  "item.mymod.tnt10x": "TNT 10X"
+  "item.mymod.tnt10x": "TNT 10X",
+
+  "block.mymod.block_smth": "Block of Something"
 }
